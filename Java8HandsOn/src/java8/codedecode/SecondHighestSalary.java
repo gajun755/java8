@@ -24,7 +24,10 @@ public class SecondHighestSalary {
 	System.out.println(empList.stream().sorted(Comparator.comparingDouble(Employee::getSalary).reversed()).skip(1).findFirst());
 		//String s="abc";
 		//s.codePoints().mapToObj(Character::toString).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
-
+		empList.stream().sorted(Comparator.comparingDouble(Employee::getSalary).reversed()).skip(1).findFirst();
+		empList.stream().sorted().forEach(x->System.out.println(x));
+	
+		
 	}
 
 }
